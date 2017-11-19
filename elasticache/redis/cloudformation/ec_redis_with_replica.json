@@ -5,11 +5,11 @@
         "RedisNodeType": {
             "Description": "elasticache Redis Node Instance Type",
             "Type": "String",
-            "Default": "cache.m4.large",
+            "Default": "cache.t2.micro",
             "AllowedValues": [
-                "cache.m4.large"
+                "cache.t2.micro"
             ],
-            "ConstraintDescription": "must be an m3.medium - the least costly machine that can use a Replication Group."
+            "ConstraintDescription": "the least costly machine that can use "
         }
     },
     "Mappings": {},
@@ -161,8 +161,8 @@
                     "Ref": "RedisSubnetGroup"
                 },
                 "Engine": "redis",
-                "EngineVersion": "3.2.4",
-                "NumCacheClusters": 2,
+                "EngineVersion": "3.2.10",
+                "NumCacheClusters": 3,
                 "ReplicationGroupDescription": "RedisReplicationGroup",
                 "SecurityGroupIds": [
                     {
