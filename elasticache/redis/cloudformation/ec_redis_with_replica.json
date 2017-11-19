@@ -5,9 +5,9 @@
         "RedisNodeType": {
             "Description": "elasticache Redis Node Instance Type",
             "Type": "String",
-            "Default": "cache.t2.micro",
+            "Default": "cache.m3.medium",
             "AllowedValues": [
-                "cache.t2.micro"
+                "cache.m3.medium"
             ],
             "ConstraintDescription": "the least costly machine that can use "
         }
